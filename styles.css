@@ -1,0 +1,240 @@
+body{
+    margin: 0;
+    font-family: "Smythe", serif;
+}
+
+h1{
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+h2{
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+
+header {
+    color: white;
+    background-image: url('./images/bg\ img.png');
+    background-size: cover;
+    height: 10em;
+    display: flex;
+    align-items: center;
+    
+}
+
+nav{
+    margin-left: 2.75em;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.food-item{
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 2em 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.food-icon{
+    font-size: 3rem;
+    margin: 0;
+    user-select: none;
+}
+
+h4{
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.food-info-cntr {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.food-description {
+    color: #8B8B8B;
+    font-size: 1rem;
+    margin: 0.5em 0;
+}
+
+.food-price {
+    font-size: 1.25rem;
+    margin: 0.5em 0;
+}
+
+.add-button{
+    border: #8B8B8B solid 1px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.add-button:hover{
+    background-color: rgba(236, 236, 236, 0.479);
+}
+
+.add-button:active{
+    transform: scale(0.95);
+}
+
+.add-plus{
+    font-family: "Inter", serif;
+    margin: 0;
+    line-height: 1;
+    user-select: none;
+}
+
+#order-info {
+    width: 80%;
+    margin-top: 2.80em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    display: none;
+}
+
+#order-info h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin-bottom: 1.5em;
+}
+
+.ordered-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.5em;
+}
+
+.ordered-item h3, .total-price {
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.order-item-remove {
+    margin-right: auto;
+    margin-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.75rem;
+    color: #BBBBBB;
+    cursor: pointer;
+    user-select: none;
+}
+
+.order-item-remove:active {
+    transform: scale(0.95);
+}
+
+.order-item-price, .total-price-num {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.order-container {
+    border-bottom: 2px solid #393333;
+    gap: -50px;
+}
+
+.total-price-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5em;
+}
+
+.order-btn {
+    margin: 2.5em 0;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    width: 100%;
+    color: white;
+    padding: 1em 0;
+    background: #16DB99;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    background: #13c086;
+}
+
+.order-btn:active {
+    transform: scale(0.98);
+}
+
+#payment-modal {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 524px; 
+    height: 542px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 50px 20px 500px black;
+}
+
+#payment-modal h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+#payment-form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+    width: 100%;
+    height: 100%;
+    gap: 1em;
+}
+
+#payment-form input, .pay-btn {
+    width: 80%;
+    padding: 0.8em 1em;
+    font-size: 1.25rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 4px;
+    border: 1px solid #757575;
+}
+
+.pay-btn {
+    font-weight: bold;
+    background: #16DB99;
+    color: white;
+    border: none;
+    margin-top: auto;
+    margin-bottom: 1.8em;
+    width: 88%;
+}
